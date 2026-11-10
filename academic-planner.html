@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080812">
+  <meta name="description" content="The academic planner page of Emmanuel Omogbolahan Ayedun's portfolio.">
+  <title>Academic Planner | Emmanuel Ayedun</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Emmanuel Ayedun home">
+      <span class="brand-mark" aria-hidden="true"><i></i><b></b><em></em></span>
+      <span>Emmanuel Ayedun</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="" href="index.html">Home</a>
+<a class="" href="about.html">About</a>
+<a class="" href="projects.html">Projects</a>
+<a class="" href="contact.html">Contact</a>
+<a class="active" href="academic-planner.html">Academic Planner</a>
+    </nav>
+    
+  </header>
+  <main>
+    <section class="planner page-section" id="planner">
+      <div class="planner-intro">
+        <p class="eyebrow"><span></span> Academic Planner</p>
+        <h2>Academic<br><strong>Planner</strong></h2>
+        <p>Plan your tasks and stay on track.</p>
+        <svg class="calendar-art" viewBox="0 0 220 190" aria-hidden="true"><path d="M38 35h140a13 13 0 0113 13v119H25V48a13 13 0 0113-13z" fill="#30205e" stroke="#a96aff" stroke-width="5"/><path d="M25 69h166" stroke="#b88cff" stroke-width="5"/><path d="M60 19v34M155 19v34" stroke="#c9a5ff" stroke-width="12" stroke-linecap="round"/><g fill="#a66bff"><rect x="48" y="89" width="25" height="20" rx="4"/><rect x="88" y="89" width="25" height="20" rx="4"/><rect x="128" y="89" width="25" height="20" rx="4"/><rect x="48" y="123" width="25" height="20" rx="4"/><rect x="88" y="123" width="25" height="20" rx="4"/></g><path d="M127 132l12 12 25-31" fill="none" stroke="#d5ff35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="planner-board">
+        <form class="task-entry" id="taskForm">
+          <input id="taskInput" type="text" placeholder="Add New Task..." aria-label="New task" maxlength="120" required>
+          <input id="taskDueDate" type="date" aria-label="Task due date">
+          <button class="button button-lime" id="taskSubmit" type="submit">Add Task <span>＋</span></button>
+          <button class="task-cancel" id="cancelEdit" type="button" hidden>Cancel</button>
+        </form>
+        <p class="planner-feedback" id="plannerFeedback" aria-live="polite"></p>
+        <div class="planner-summary" id="plannerSummary"></div>
+        <div class="task-filters" role="group" aria-label="Filter tasks"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="pending">Pending</button><button class="filter" data-filter="completed">Completed</button></div>
+        <ul class="task-list" id="taskList" aria-live="polite"></ul>
+        <p class="planner-note">Tasks are saved automatically in this browser on this device. They do not sync between browsers or devices.</p>
+      </div>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> Emmanuel Omogbolahan Ayedun</span><a href="index.html">Home ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

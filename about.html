@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080812" />
+    <meta
+      name="description"
+      content="The about page of Emmanuel Omogbolahan Ayedun's portfolio."
+    />
+    <title>About | Emmanuel Ayedun</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Emmanuel Ayedun home">
+        <span class="brand-mark" aria-hidden="true"
+          ><i></i><b></b><em></em
+        ></span>
+        <span>Emmanuel Ayedun</span>
+      </a>
+      <button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="" href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a class="" href="projects.html">Projects</a>
+        <a class="" href="contact.html">Contact</a>
+        <a class="" href="academic-planner.html">Academic Planner</a>
+      </nav>
+    </header>
+    <main>
+      <section class="about page-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> About</p>
+          <h2>About<br /><strong>Me</strong></h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I’m Emmanuel Omogbolahan Ayedun, a programmer with a strong interest
+            in game development and technology. I enjoy turning ideas into
+            projects and continuously improving my skills.
+          </p>
+          <p>
+            My interests include programming, web development, and creating
+            games. I am working towards becoming a computer programmer.
+          </p>
+
+          <div class="audio-intro">
+            <div class="audio-intro-heading">
+              <span class="audio-play-symbol">▶</span>
+              <div>
+                <h3>Audio Introduction</h3>
+                <p>Listen to Emmanuel's introduction.</p>
+              </div>
+            </div>
+
+            <audio id="emmanuelAudio" preload="metadata">
+              <source src="assets/emmanuel-audio.ogg" type="audio/ogg" />
+              Your browser does not support audio playback.
+            </audio>
+
+            <div class="audio-controls">
+              <button class="audio-button" id="playIntro" type="button">
+                Play Introduction
+              </button>
+
+              <button
+                class="audio-button audio-button-secondary"
+                id="pauseIntro"
+                type="button"
+                disabled
+              >
+                Pause
+              </button>
+
+              <button
+                class="audio-button audio-button-secondary"
+                id="stopIntro"
+                type="button"
+                disabled
+              >
+                Stop
+              </button>
+            </div>
+
+            <p class="audio-status" id="audioStatus">
+              Ready to play Emmanuel's recorded introduction.
+            </p>
+          </div>
+
+          <div class="interests">
+            <h3>My Interests</h3>
+            <div class="interest-list">
+              <span>🎮 <b>Gaming</b></span
+              ><span>〈/〉 <b>Coding</b></span
+              ><span>▣ <b>Movies</b></span
+              ><span>♬ <b>Drums</b></span>
+            </div>
+          </div>
+        </div>
+        <aside class="skills-panel">
+          <h3>My Skills</h3>
+          <div class="skill">
+            <div><span>Python</span><small>Beginner</small></div>
+            <div class="skill-track"><i style="width: 42%"></i></div>
+          </div>
+          <div class="skill">
+            <div><span>HTML</span><small>Foundations</small></div>
+            <div class="skill-track"><i style="width: 55%"></i></div>
+          </div>
+          <div class="skill">
+            <div><span>CSS</span><small>Foundations</small></div>
+            <div class="skill-track"><i style="width: 45%"></i></div>
+          </div>
+          <p class="skill-note">
+            Skill levels are described rather than scored.
+          </p>
+        </aside>
+        <div class="about-decoration" aria-hidden="true">
+          <svg viewBox="0 0 220 180">
+            <path
+              d="M20 55h45V10h42v45h45v42h-45v45H65V97H20z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="8"
+            />
+            <circle
+              cx="178"
+              cy="145"
+              r="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="6"
+            />
+          </svg>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>© <span id="year"></span> Emmanuel Omogbolahan Ayedun</span
+      ><a href="index.html">Home ↑</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
